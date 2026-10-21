@@ -97,6 +97,16 @@ var diff21 = function(n) {
     return n > 21 ? (n - 21) * 2 : Math.abs(n - 21);
 };
 
+/**
+ * 11. parrotTrouble
+ * @param {boolean} talking
+ * @param {number} hour
+ * @return {boolean}
+ */
+var parrotTrouble = function (talking, hour) {
+    return talking && (hour < 7 || hour > 20);
+};
+
 module.exports = {
     solveMeFirst,
     multiply,
@@ -109,3 +119,4 @@ module.exports = {
     sumDouble,
     diff21
 };
+
