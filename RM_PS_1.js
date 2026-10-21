@@ -301,6 +301,15 @@ module.exports = {
     monkeyTrouble,
     sumDouble,
     diff21,
+    parrotTrouble,
+    makes10,
+    nearHundred,
+    posNeg,
+    notString,
+    compareTriplets,
+    aVeryBigSum,
+    staircase,
+    gradingStudents,
     timeConversion,
     repeatStr,
     solution,
@@ -308,4 +317,5 @@ module.exports = {
     summation,
     booleanToString
 };
+
 
