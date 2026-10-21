@@ -281,6 +281,15 @@ var summation = function (num) {
     return sum;
 };
 
+/**
+ * 25. Convert a Boolean to a String
+ * @param {boolean} b
+ * @return {string}
+ */
+var booleanToString = function (b) {
+    return String(b);
+};
+
 module.exports = {
     solveMeFirst,
     multiply,
@@ -292,5 +301,6 @@ module.exports = {
     monkeyTrouble,
     sumDouble,
     diff21
+    
 };
 
