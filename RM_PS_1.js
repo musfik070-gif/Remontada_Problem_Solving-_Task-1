@@ -300,7 +300,12 @@ module.exports = {
     sleepIn,
     monkeyTrouble,
     sumDouble,
-    diff21
-    
+    diff21,
+    timeConversion,
+    repeatStr,
+    solution,
+    positiveSum,
+    summation,
+    booleanToString
 };
 
