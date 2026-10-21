@@ -140,6 +140,20 @@ var posNeg = function (a, b, negative) {
     return (a < 0 && b > 0) || (a > 0 && b < 0);
 };
 
+/**
+ * 15. notString
+ * @param {string} str
+ * @return {string}
+ */
+var notString = function (str) {
+    if (str.startsWith('not')) {
+        return str;
+    }
+    return 'not ' + str;
+};
+ 
+
+
 module.exports = {
     solveMeFirst,
     multiply,
