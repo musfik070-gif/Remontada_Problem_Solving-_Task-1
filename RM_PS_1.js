@@ -126,6 +126,20 @@ var nearHundred = function (n) {
     return Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10;
 };
 
+/**
+ * 14. posNeg
+ * @param {number} a
+ * @param {number} b
+ * @param {boolean} negative
+ * @return {boolean}
+ */
+var posNeg = function (a, b, negative) {
+    if (negative) {
+        return a < 0 && b < 0;
+    }
+    return (a < 0 && b > 0) || (a > 0 && b < 0);
+};
+
 module.exports = {
     solveMeFirst,
     multiply,
