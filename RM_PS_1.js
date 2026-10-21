@@ -171,6 +171,20 @@ var compareTriplets = function (a, b) {
     return [alice, bob];
 };
 
+/**
+ * 17. A Very Big Sum
+ * @param {number[]} ar
+ * @return {number}
+ */
+var aVeryBigSum = function (ar) {
+    let sum = 0;
+    for (let i = 0; i < ar.length; i++) {
+        sum += ar[i];
+    }
+    return sum;
+};
+
+
 module.exports = {
     solveMeFirst,
     multiply,
