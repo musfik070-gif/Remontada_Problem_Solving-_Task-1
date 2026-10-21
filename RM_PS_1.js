@@ -184,6 +184,19 @@ var aVeryBigSum = function (ar) {
     return sum;
 };
 
+/**
+ * 18. Staircase
+ * @param {number} n
+ * @return {string}
+ */
+var staircase = function (n) {
+    let rows = [];
+    for (let i = 1; i <= n; i++) {
+        rows.push(' '.repeat(n - i) + '#'.repeat(i));
+    }
+    return rows.join('\n');
+};
+
 
 module.exports = {
     solveMeFirst,
