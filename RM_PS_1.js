@@ -216,6 +216,24 @@ var gradingStudents = function (grades) {
     return result;
 };
 
+/**
+ * 20. Time Conversion
+ * @param {string} s
+ * @return {string}
+ */
+var timeConversion = function (s) {
+    let hour = parseInt(s.slice(0, 2));
+    let period = s.slice(8);
+
+    if (period === "AM") {
+        if (hour === 12) hour = 0;
+    } else {
+        if (hour !== 12) hour += 12;
+    }
+
+    return String(hour).padStart(2, "0") + s.slice(2, 8);
+};
+
 module.exports = {
     solveMeFirst,
     multiply,
