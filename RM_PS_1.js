@@ -244,6 +244,16 @@ var repeatStr = function (n, s) {
     return s.repeat(n);
 };
 
+/**
+ * 22. Reversed Strings
+ * @param {string} str
+ * @return {string}
+ */
+var solution = function (str) {
+    return str.split('').reverse().join('');
+};
+
+
 module.exports = {
     solveMeFirst,
     multiply,
