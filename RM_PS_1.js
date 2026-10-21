@@ -234,6 +234,16 @@ var timeConversion = function (s) {
     return String(hour).padStart(2, "0") + s.slice(2, 8);
 };
 
+/**
+ * 21. String Repeat
+ * @param {number} n
+ * @param {string} s
+ * @return {string}
+ */
+var repeatStr = function (n, s) {
+    return s.repeat(n);
+};
+
 module.exports = {
     solveMeFirst,
     multiply,
