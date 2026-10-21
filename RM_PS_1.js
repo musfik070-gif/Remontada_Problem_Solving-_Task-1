@@ -197,6 +197,24 @@ var staircase = function (n) {
     return rows.join('\n');
 };
 
+/**
+ * 19. Grading Students
+ * @param {number[]} grades
+ * @return {number[]}
+ */
+var gradingStudents = function (grades) {
+    let result = [];
+    for (let i = 0; i < grades.length; i++) {
+        let grade = grades[i];
+        let nextMultiple = Math.ceil(grade / 5) * 5;
+        if (grade >= 38 && nextMultiple - grade < 3) {
+            result.push(nextMultiple);
+        } else {
+            result.push(grade);
+        }
+    }
+    return result;
+};
 
 module.exports = {
     solveMeFirst,
