@@ -152,7 +152,24 @@ var notString = function (str) {
     return 'not ' + str;
 };
  
-
+/**
+ * 16. Compare the Triplets
+ * @param {number[]} a
+ * @param {number[]} b
+ * @return {number[]}
+ */
+var compareTriplets = function (a, b) {
+    let alice = 0;
+    let bob = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] > b[i]) {
+            alice++;
+        } else if (a[i] < b[i]) {
+            bob++;
+        }
+    }
+    return [alice, bob];
+};
 
 module.exports = {
     solveMeFirst,
